@@ -4,3 +4,44 @@
   --Purple-600: hsl(292, 16%, 49%);
   --Purple-950: hsl(292, 42%, 14%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.background {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0) 50%, var(--Purple-100) 50%),
+    url("assets/images/background-pattern-desktop.svg") no-repeat top center;
+  background-size: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-card{
+    background: var(--White);
+    padding: 2rem;
+    width: clamp(90%, 50%, 550px);
+    max-width:550px ;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
