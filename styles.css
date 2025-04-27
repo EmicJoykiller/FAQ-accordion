@@ -69,29 +69,31 @@ html {
   cursor: pointer;
 }
 
-.faq-item:first-child {
-  border-top: none;
+.default {
+  border: none;
 }
 
 .question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    color: var(--Purple-950);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: var(--Purple-950);
 }
 
 .answer {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--Purple-600);
-    font-weight: 400;
+  display: none;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--Purple-600);
+  font-weight: 400;
 }
 
 .faq-item.active .answer {
-    display: block;
+  display: block;
 }
 
 .faq-item.active .toggle {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
